@@ -1,0 +1,31 @@
+site_name: Kubernetes Observability Recipes
+site_description: 'A collection of Kubernetes observability recipes and tips & tricks'
+site_author: 'Torsten Bøgh Köster'
+repo_name: 'o12stack/recipes'
+repo_url: 'https://github.com/observabilitystack/recipes'
+#copyright: ''
+nav:
+    - Base: index.md
+#    - Visualizations: vis.md
+#    - Applications: apps.md
+#    - Contributors: contribs.md
+theme:
+    name: 'material'
+    # custom_dir: 'theme'
+    # favicon: 'assets/images/favicon.png'
+    # logo: 'assets/images/logo.png'
+    #   icon: 'timelapse'
+    palette:
+      primary: 'blue'
+      accent: 'amber'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - json
+        - bash
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - codehilite:
+        linenums: true
