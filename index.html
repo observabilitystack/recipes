@@ -115,38 +115,13 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Base
+                Recipes
               
             </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         
       </div>
       
@@ -234,10 +209,82 @@
       
     
     
-    <a href="." title="Base" class="md-nav__link md-nav__link--active">
-      Base
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Recipes
+      </label>
+    
+    <a href="." title="Recipes" class="md-nav__link md-nav__link--active">
+      Recipes
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recipes-covered" class="md-nav__link">
+    Recipes covered
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-test-bed" class="md-nav__link">
+    Kubernetes test bed
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="log-management/" title="Log Management" class="md-nav__link">
+      Log Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="monitoring/" title="Monitoring" class="md-nav__link">
+      Monitoring
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="tools/" title="Kubernetes Tools" class="md-nav__link">
+      Kubernetes Tools
+    </a>
   </li>
 
     
@@ -258,6 +305,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recipes-covered" class="md-nav__link">
+    Recipes covered
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-test-bed" class="md-nav__link">
+    Kubernetes test bed
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -272,6 +342,19 @@
                 
                 
                 <h1 id="kubernetes-observability-patterns">Kubernetes Observability Patterns<a class="headerlink" href="#kubernetes-observability-patterns" title="Permanent link">&para;</a></h1>
+<p>This is a collection of recipes I commonly use when building a production ready
+Kubernetes clusters. This repo aims at filling the gap between a vanilla and a 
+production ready Kubernetes. But remember: your milage may vary!</p>
+<h2 id="recipes-covered">Recipes covered<a class="headerlink" href="#recipes-covered" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="log-management/">Log Management</a></li>
+<li>Monitoring</li>
+<li>Cluster &amp; Application Scaling</li>
+</ul>
+<h2 id="kubernetes-test-bed">Kubernetes test bed<a class="headerlink" href="#kubernetes-test-bed" title="Permanent link">&para;</a></h2>
+<p>Before copy &amp; pasting some YAML into your production cluster, I highly suggest testing
+things in a dedicated test cluster. I maintain some basic 
+<a href="https://github.com/tboeghk/kubernetes-in-the-clouds"><em>Terraform</em> cloud provider setups over at GitHub</a>.</p>
                 
                   
                 
@@ -289,6 +372,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="log-management/" title="Log Management" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Log Management
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
